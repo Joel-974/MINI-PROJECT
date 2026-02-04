@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Home Dashboard - Opportunity Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b8cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden pb-10">
+<!-- TopAppBar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-50">
+<div class="flex size-12 shrink-0 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8 bg-primary/20 flex items-center justify-center" data-alt="Student profile avatar placeholder">
+<span class="material-symbols-outlined text-primary">account_circle</span>
+</div>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1">Opportunity Hub</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#111418] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined" data-icon="Bell">notifications</span>
+</button>
+</div>
+</div>
+<!-- HeadlineText -->
+<div class="px-4 pt-6">
+<h1 class="text-[#111418] dark:text-white tracking-light text-[32px] font-bold leading-tight text-left">Hi, Alex! 👋</h1>
+</div>
+<!-- BodyText -->
+<div class="px-4 pt-1 pb-3">
+<p class="text-[#111418] dark:text-gray-300 text-base font-normal leading-normal">Ready to discover your next big opportunity?</p>
+</div>
+<!-- Quick Access Categories (ImageGrid) -->
+<div class="grid grid-cols-2 gap-3 p-4">
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm relative overflow-hidden" data-alt="Abstract academic scholarship graduation cap icon" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCak3Sej2fYjFT9hI2bJ3nS5RS7T0617J1pjQG2ab5DxdOm6UIOL5VWuUiWhMZh0_CWrZueLkM4RDQPnLoNNFQgB2270jHRyd0PrIeFGJZF9fqIYDqaGNDvj6hZlZdmwiS3GFaFGTcexO4NduvHl4RPxfRhSlUuWA5tl2MQZvlZEEMCgQT1RvJJFHe1bwC6ZvVDy1AEROEB0Umx3Vb70HQMH366_s0vzNeyZ6LTI2DUwlplNIwpFcrDyilQi4TyOQpN7xY0RjrkKes");'>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Scholarships</p>
+</div>
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm relative overflow-hidden" data-alt="Professional office building modern workspace" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDK-pIvQ30rTb6l3NWD5ETPNeV4oA-2E6rCkgVI1rpjJjGBg2dvIjzfvT_k5N37s48ekJay2jmOxrLzjDu20xqckZzQJE1G5rt3dKHPA6aljt3pgEONle4PgYNJLszyMl4eo5XHsqTHPMbDGjYnLW4RPSN3rlzlZI4WOeULLCQJpGQrhQYvcoJzUMxQiVTsd2OjL0hgLWOJm-eJQd4ugHDnh8axMhVIjzddS3GF97l5w19HEkDgVomFI_wBoomqMy7Sy7jnj3FZpQ8");'>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Internships</p>
+</div>
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm relative overflow-hidden" data-alt="Digital code and technology hacking event" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAA6z7o5xU09WhWvv4NMyUassLWEMUaRNR-7AphqjnDqarvCoj_AQbkLbYPQAz7VWW0MKwuubT-aRh4fR2wDrcZatZ2jbj07bUYiPYG61vAsIsaB3-8i-SCUh27_x172SliMJP-kLl-z44D4n3ajpxOP3UxLEWrGQEXfsdF8ndt7-GdGSoPJmGelTvOzAEaVwVtcd1uCLeSEKsV8NvCK9L5DJgWqcr7LUYBzqHpDPS8wF2IHU6U_V8Po_tQRFaMOG2FofGXozM5pao");'>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Hackathons</p>
+</div>
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm relative overflow-hidden" data-alt="Collaborative workshop group meeting space" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYcj-PmK9DDwdgMUPwonbKvlLTWxA-8zZ8GISDmWKWWu6DuIttW0QQdLv8ecgowoVLwhKKLrvLX2bHP4ecGMn-vjZeD4DojyL8Lo46_SXAnPl5AzIjfs_4AOyHa1xfQw3U8YW4Kk9Intp-4Lng1xN9SVLxQpeaS99qDueulN_rhz7WDHEIxDEpzzreYdIQN0aM_wNzb683YFoIvZEGgdklmPgQdMESomBt2jkV9NP7H1rKF5QkP5MmboOk77u-sTaodUYTYVt6fVg");'>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Workshops</p>
+</div>
+</div>
+<!-- SectionHeader -->
+<div class="flex items-center justify-between px-4 pb-3 pt-5">
+<h2 class="text-[#111418] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Recommended for You</h2>
+<button class="text-primary text-sm font-semibold">See All</button>
+</div>
+<!-- Horizontal Scroll Section -->
+<div class="flex overflow-x-auto gap-4 px-4 pb-6 no-scrollbar">
+<!-- Recommendation Card 1 -->
+<div class="flex-none w-[280px] bg-white dark:bg-background-dark/50 border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden shadow-sm">
+<div class="h-32 bg-cover bg-center" data-alt="Tech company office interior" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzm88dkL2D2UW2ljfJHyoWbVbj8TnCEPP1Zu-CjqkOQ5JQYaYtjJ_Tyb9hQdNohG4l-hCKErZBKnxD_u-HM2JCGbygt40ft1GVZaIQ_xvhczeOzL2BiIrKgzaBpwR_fqt5Y3JjNyOdbWyyolGVu-xvwesMm7b-YjIz2U3CQQC_QbR-4fQHx3rUWzhH2niF-xuTPBFW8g9RcCwQk2Ynd34-Ev7zk0u2xfT-Z9-1DuSvsJpxIw9JZQrZ8cOF4HAxe3mAsdkNs14iyZk");'></div>
+<div class="p-4">
+<span class="inline-block px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-primary bg-primary/10 rounded-full mb-2">Google • Software Engineering</span>
+<h3 class="text-[#111418] dark:text-white font-bold text-lg mb-1">Summer Internship 2024</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-4">Mountain View, CA • Hybrid</p>
+<button class="w-full bg-primary text-white font-bold py-2 rounded-lg text-sm">Apply Now</button>
+</div>
+</div>
+<!-- Recommendation Card 2 -->
+<div class="flex-none w-[280px] bg-white dark:bg-background-dark/50 border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden shadow-sm">
+<div class="h-32 bg-cover bg-center" data-alt="Blue and gold scholarship certificate" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCWldC6E_9R2wo80o-KYPjZJPuGo1D7KnBux3VGI-YxhMyOlLiyNAdKFKrdxgQmHVPZBhg81Fm_gbjBf87L4exBGaKVnxlQhRV2GS9ibECM4Ud_zcTrIT1o5I8_mDTKMwqMon3MTHFU8jECmyPX2zIf0O0FPIuBcXbfdqPLFngXnj8F0NdkbNmgUnhjYyoD-T36XRdNnIpPK-n-__e7OBjgmE1OS4xAcKSeq6JOAjIGuwTHZCDYT5yrXYrpKA5VX-3jBo7pBK1GEUw");'></div>
+<div class="p-4">
+<span class="inline-block px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-green-600 bg-green-100 rounded-full mb-2">STEM Foundation • $10,000</span>
+<h3 class="text-[#111418] dark:text-white font-bold text-lg mb-1">Innovators Merit Award</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-4">Deadline: Sept 15, 2023</p>
+<button class="w-full bg-primary text-white font-bold py-2 rounded-lg text-sm">View Details</button>
+</div>
+</div>
+<!-- Recommendation Card 3 -->
+<div class="flex-none w-[280px] bg-white dark:bg-background-dark/50 border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden shadow-sm">
+<div class="h-32 bg-cover bg-center" data-alt="Event stage with bright lights" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3788TNj_7OvOM3RdySBM2vQIp9PvKTCFbgM65DbmJF5E4-xI5j9ca8MDd1PaWJUtaFV9KXFA4B-nLkMSG_g3SPEQbJyCMNrszPE03jVR0i498yLTo63v3kmdpoQ7E0joMWl_ga5t10X4c4d192lQznpnSNjGCEPnDo9-8RqmJ7kHgxUIPHXxAmXTLQgoZG8xZekeoY4bxe5gjQqhYe4KzhRioOwr-bjRoehUOhEJ-jZ89SQ4J61HGTpNu9l7JfEwIKp_69YWPa9U");'></div>
+<div class="p-4">
+<span class="inline-block px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-orange-600 bg-orange-100 rounded-full mb-2">MLH • 48 Hours</span>
+<h3 class="text-[#111418] dark:text-white font-bold text-lg mb-1">Global Student Hackathon</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-4">Virtual • Free Entry</p>
+<button class="w-full bg-primary text-white font-bold py-2 rounded-lg text-sm">Register</button>
+</div>
+</div>
+</div>
+<!-- Custom Bottom Nav (Optional but improves iOS look) -->
+<div class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-t border-gray-200 dark:border-gray-800 flex justify-around py-3">
+<div class="flex flex-col items-center text-primary">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] mt-1 font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center text-gray-400">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] mt-1 font-medium">Discover</span>
+</div>
+<div class="flex flex-col items-center text-gray-400">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="text-[10px] mt-1 font-medium">Saved</span>
+</div>
+<div class="flex flex-col items-center text-gray-400">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] mt-1 font-medium">Profile</span>
+</div>
+</div>
+</div>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

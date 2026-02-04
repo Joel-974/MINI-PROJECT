@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login - EDUNAVIGATOR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2b8cee",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen">
+<div class="flex flex-col max-w-[480px] mx-auto min-h-screen bg-white dark:bg-background-dark shadow-xl">
+<!-- Header Image / Illustration -->
+<div class="@container">
+<div class="@[480px]:px-4 @[480px]:py-3">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-primary/10 @[480px]:rounded-lg min-h-64" data-alt="Digital illustration of a student reaching for stars and graduation icons" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCjC1ZKWIS_XkSjGsMnlyTGlDfqmmiGtc-83eabR3I0g8Z4J8VlRCjtg2HKMGOIBpow4DaylAA0I4Qu2wHF_l3YJxczslZox26egEv5cuTZFK1LmoRe2RLv16_pK-y_-25warxtue_wEAQpqa9MKY_RmYiqyX73KUqlNrlKcGgDjjJ2yCn3TAeo6ifqHk078mf8RUh1UA0SaVXnDaEyi-CCgpsldNsp_ak7qa51BReyDmPX06YydNB7YcETLBtxFDneBM6KY3vm2Ps");'>
+</div>
+</div>
+</div>
+<!-- Welcome Text -->
+<div class="flex flex-col px-4 pt-8 pb-4">
+<h1 class="text-[#111418] dark:text-white tracking-tight text-[32px] font-bold leading-tight text-center">
+                Welcome to EDUNAVIGATOR
+            </h1>
+<p class="text-[#617589] dark:text-gray-400 text-base font-normal leading-normal pt-2 px-4 text-center">
+                Find your next scholarship, internship, or event.
+            </p>
+</div>
+<!-- Form Fields -->
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-end gap-4 px-4 py-2">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal pb-2">Email</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-gray-800 h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="student@university.edu" value=""/>
+</label>
+</div>
+<div class="flex flex-wrap items-end gap-4 px-4 py-2">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal pb-2">Password</p>
+<div class="flex w-full flex-1 items-stretch rounded-xl">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-gray-800 h-14 placeholder:text-[#617589] p-[15px] rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal" placeholder="Enter your password" type="password" value=""/>
+<div class="text-[#617589] flex border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-gray-800 items-center justify-center pr-[15px] rounded-r-xl border-l-0">
+<span class="material-symbols-outlined">visibility</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Forgot Password -->
+<div class="px-4 text-right">
+<a class="text-primary text-sm font-medium" href="#">Forgot password?</a>
+</div>
+<!-- Primary Action -->
+<div class="px-4 py-6">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl text-lg transition-colors">
+                Sign In
+            </button>
+</div>
+<!-- Divider -->
+<div class="flex items-center px-4 py-4">
+<div class="flex-1 h-[1px] bg-[#dbe0e6] dark:bg-gray-700"></div>
+<span class="px-4 text-[#617589] text-sm">Or continue with</span>
+<div class="flex-1 h-[1px] bg-[#dbe0e6] dark:bg-gray-700"></div>
+</div>
+<!-- Social Logins -->
+<div class="flex gap-4 px-4 pb-8">
+<button class="flex-1 flex items-center justify-center gap-2 border border-[#dbe0e6] dark:border-gray-700 rounded-xl h-14 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<img alt="Google Logo" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGTCrYWBefkW4-nMNZzqFqv5_XMAjfG5ZXU2ByLZB306gDQvUNElQuTgFvzfRevbNsWsqVljkbtD22jUClbl_uE2b5S0ZkI-ymQFM5IEDw3lbNOEfBK9E929JJYkoNRtDthDbGS5IKjCYgOFou1qsBusRHLPJr1UGSfT4qoFcnw_-gE343FjaQw1-__nM3WXm2Zo6ecpWfZNCgwRoazsKw01A_RO4YtZatxqYnt5CvMN4SS1wqgOWikkH_fhBXbWTlZMpE4azIRSk"/>
+<span class="text-[#111418] dark:text-white font-medium">Google</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-2 border border-[#dbe0e6] dark:border-gray-700 rounded-xl h-14 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<img alt="LinkedIn Logo" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpNtrbtzYb_2eClpsd1TpctPuDY7qgil8APwa2QR9q1pX7yu-WISd_gv6kPfHpacu2wr3ou6VNIUgEelILZXmYUGbUexJoWzw0FHdSxa_ZIGidnxqfOuRG3O5DcvWHQyfUdltvzIMVyfcN-Nq8xjL3_0fPMontgxY81WywpGCZmWYxrVbS95re_0Lg1qsz9or-dpA-kLOEViIg3T3wRf86hsjleO6bdp4WTkHwbaF6z40j3sfZkfN_oCSZdTSJ2AyG0VPvWHAG8dY"/>
+<span class="text-[#111418] dark:text-white font-medium">LinkedIn</span>
+</button>
+</div>
+<!-- Sign Up Link -->
+<div class="mt-auto pb-10 text-center">
+<p class="text-[#617589] text-sm">
+                Don't have an account? 
+                <a class="text-primary font-bold" href="#">Sign up</a>
+</p>
+</div>
+</div>
+</body></html>

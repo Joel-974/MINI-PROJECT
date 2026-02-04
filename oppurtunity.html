@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b8cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen text-[#111418] dark:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden mx-auto max-w-[430px] shadow-2xl">
+<div class="flex items-center bg-white dark:bg-[#1a2632] p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-100 dark:border-gray-800">
+<div class="flex size-12 shrink-0 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-9" data-alt="Student profile avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxU6NRaL00YemUPqIcuEULuefdZ0Dzp1K0Hr702gjoAkrS5pWspSA0z8urWOrRqvZParjGGL15T4oMNuqhMHdrXkNaxkvnrOZ88RhkpxHRBkZs8KUq7Wf8BJHz2xkN7fOfq8MhFEz67u6_LC2Z1QpIHGEPhCTj2i4J-zqdIJwwPs_gvTg6EHOa1W_QpiJvnEJ0hpXcWx09lZL28BnJ-EoTl4KuSRzlTEigEfVpwbQC51qx77P1maJa-65DCntTYWHt3M0eedAgX8c");'></div>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Opportunities</h2>
+<div class="flex w-12 items-center justify-end text-primary">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#111418] dark:text-white gap-2 text-base font-bold">
+<span class="material-symbols-outlined" data-icon="Notifications">notifications</span>
+</button>
+</div>
+</div>
+<div class="px-4 py-3 bg-white dark:bg-[#1a2632]">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full overflow-hidden">
+<div class="text-[#617589] flex border-none bg-[#f0f2f4] dark:bg-[#2a3a4a] items-center justify-center pl-4 border-r-0">
+<span class="material-symbols-outlined" data-icon="Search">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-[#111418] dark:text-white focus:outline-0 focus:ring-0 border-none bg-[#f0f2f4] dark:bg-[#2a3a4a] h-full placeholder:text-[#617589] px-4 pl-2 text-base font-normal" placeholder="Search internships, hackathons..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex gap-3 p-4 overflow-x-auto bg-white dark:bg-[#1a2632] scrollbar-hide no-scrollbar">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/10 dark:bg-primary/20 border border-primary/20 px-4">
+<span class="text-primary text-sm font-semibold leading-normal">Remote</span>
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="CaretDown">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#f0f2f4] dark:bg-[#2a3a4a] px-4">
+<span class="text-[#111418] dark:text-white text-sm font-medium leading-normal">Near Me</span>
+<span class="material-symbols-outlined text-[#111418] dark:text-white text-[18px]" data-icon="CaretDown">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#f0f2f4] dark:bg-[#2a3a4a] px-4">
+<span class="text-[#111418] dark:text-white text-sm font-medium leading-normal">Internships</span>
+<span class="material-symbols-outlined text-[#111418] dark:text-white text-[18px]" data-icon="CaretDown">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#f0f2f4] dark:bg-[#2a3a4a] px-4">
+<span class="text-[#111418] dark:text-white text-sm font-medium leading-normal">Scholarships</span>
+<span class="material-symbols-outlined text-[#111418] dark:text-white text-[18px]" data-icon="CaretDown">expand_more</span>
+</button>
+</div>
+<div class="flex-1 pb-20">
+<h3 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Recommended for You</h3>
+<div class="p-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-sm bg-white dark:bg-[#1a2632] overflow-hidden border border-gray-100 dark:border-gray-800">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="High tech abstract background for AI hackathon" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDsiI0zXRXRMYwBqPjyue0NjXeh9u9yZfC7eQSik0K0Kl3R09AyLtNrTcfdKZNcWRcKhVglZfiJDWHH9EC3M1Jv8I849rH5G84gUXr0U-dLr-xaoMdl2j5Djuy4kE6SGKdH9XOZcfH94na_Mf-Em9MtC-Ek7Nfz2r3v28WHDZjAdPIAVnmzptC-bwTjeIIq-2YFL7mUxyOW3o8QUbNDZKQi1S35NdgxK4Nn6VVRUIRtsxnMg0Fu7mqJUc5onMN95IkFWnmM-YeH1k");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="Code">code</span>
+<p class="text-primary text-xs font-bold leading-normal uppercase tracking-wider">HACKATHON</p>
+</div>
+<p class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Global AI Hackathon 2024</p>
+<div class="flex flex-col gap-1">
+<p class="text-[#617589] dark:text-gray-400 text-sm font-normal flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span> Oct 15-17 • San Francisco / Hybrid
+                            </p>
+<p class="text-[#617589] dark:text-gray-400 text-sm font-normal">Join 500+ developers for a 48-hour build challenge using LLMs.</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex -space-x-2">
+<div class="size-6 rounded-full border-2 border-white dark:border-[#1a2632] bg-gray-200" data-alt="User avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqU9QF-3S6x4vHyYkWdR411z60kMhZs91QX1fDk0IhkaYw2gPGsC7RjphnFHNnIni2t4rxjYSMgd6UKs3WL60Uy432WppsNrsPOa9TOBglts5M9k1e4Hxxii7fP2ORfZ9OQvogshAkYGU7AiChZpg76kHhtEmMpaBzcUTr8WIXbErvZopVgrqgPunhog2zbRTHbc5KAOkBp50w6sgyKiResQwaO_wjZ8ADlph00_eWe7FPTGOQLbRTPbEG7mlGi4eV51Tqu1spDy8')"></div>
+<div class="size-6 rounded-full border-2 border-white dark:border-[#1a2632] bg-gray-300" data-alt="User avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbjtsDp4xqIKewfpj9ABhFKBzKT2-LdSiyf-y0GmLjaMTpvt7WsYujHFGKxhFTSievCNX9WdnrsXvJu3m5HVWXBAOunlFlvrkCSEkgLSai0C71IYnBf5JjmoeoD8GYleID_wEke_1raKm6hq-Uc-uFxsU_-mqV7JjGyf5MY8xmdEsbjTflY57Sp7DIrlsUUI6sD-anqpQ8uB61BQjcBhz4QXSKoaGo-zqOydBcKcHYAEG_--2v8SWj5SoGMimBct0zHaK4peonJiU')"></div>
+<div class="size-6 rounded-full border-2 border-white dark:border-[#1a2632] bg-primary flex items-center justify-center text-[8px] text-white">+12</div>
+</div>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-bold leading-normal transition-opacity active:opacity-80">
+<span class="truncate">Register</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 @container -mt-4">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-sm bg-white dark:bg-[#1a2632] overflow-hidden border border-gray-100 dark:border-gray-800">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Modern office space for UX Internship" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDf9WEfXkZNrDPIndKN8RV1CfuxWYwmgSmnFZ_BjVc8PjZGFKnnae99tNS7EGRj6gAhm2fwuPk_PxTkvuhMHFcFu6cXI2-Ibh4iVHgxn9Elui20zcuDhVr-mb0AKQJpOLlAZRpnfhYNWFIz3raoJ_mnSG4iDeDUqpfR94V42YoCq73SiXTdYLlmcI1I2CeSxG34bjicwlJIwgihsUAJqiiba4McT1ERG8Qa7IxjLh2szJUr3KYLvxE-YqjIDJuouHp8tcPqQpIZyh8");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="Work">work</span>
+<p class="text-primary text-xs font-bold leading-normal uppercase tracking-wider">INTERNSHIP</p>
+</div>
+<p class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Summer UX Design Intern</p>
+<div class="flex flex-col gap-1">
+<p class="text-[#617589] dark:text-gray-400 text-sm font-normal flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Remote • Starts June 2024
+                            </p>
+<p class="text-[#617589] dark:text-gray-400 text-sm font-normal">Design user-centric features for a leading fintech application.</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<p class="text-sm font-semibold text-[#111418] dark:text-white">$25 - $35/hr</p>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-bold leading-normal">
+<span class="truncate">Apply Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 @container -mt-4">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-sm bg-white dark:bg-[#1a2632] overflow-hidden border border-gray-100 dark:border-gray-800">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="STEM workshop illustration" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9h1WZAOSSBuak2FxVLA0OqTEejVPSUH-lTtbIl4gBkwDULWytpGTZ9vAXCbIRBR2PoOpLUG8-T5t06Znw2EXH12UkFsqjrskpIQRjXnngKAsOttZn0L1q2eMYYnDTV7t-DsFK7YwXfHtHbSHKovz5vCQ589h9GhAQuRhtkJ8SkD7ih4SGtBJQHI1_ywlNf5BRLluKIKjWpXiRNZ_nWEdUIRaR3T6PnphfK4bZxIjkM3kNXPP7z3RvFNz9DgR4-t7GythBThMg19w");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="School">school</span>
+<p class="text-primary text-xs font-bold leading-normal uppercase tracking-wider">WORKSHOP</p>
+</div>
+<p class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Women in STEM Seminar</p>
+<div class="flex flex-col gap-1">
+<p class="text-[#617589] dark:text-gray-400 text-sm font-normal flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> Sept 20 • 2:00 PM • Campus Hub
+                            </p>
+<p class="text-[#617589] dark:text-gray-400 text-sm font-normal">Panel discussion and networking with industry leaders.</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 text-[10px] font-bold px-2 py-1 rounded">FREE</span>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-bold leading-normal">
+<span class="truncate">Book Spot</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 w-full max-w-[430px] bg-white dark:bg-[#1a2632] border-t border-gray-100 dark:border-gray-800 flex justify-around items-center py-2 px-4 z-20">
+<div class="flex flex-col items-center text-primary">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] font-medium">Discover</span>
+</div>
+<div class="flex flex-col items-center text-gray-400">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-[10px] font-medium">Saved</span>
+</div>
+<div class="flex flex-col items-center text-gray-400">
+<span class="material-symbols-outlined">event_available</span>
+<span class="text-[10px] font-medium">My Events</span>
+</div>
+<div class="flex flex-col items-center text-gray-400">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</div>
+</div>
+<div class="h-10 bg-white dark:bg-[#1a2632]"></div>
+</div>
+</body></html>

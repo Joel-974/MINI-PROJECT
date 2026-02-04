@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Student Profile Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b8cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>body {
+    font-family: "Lexend", sans-serif
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDinrPnBcadgOH6wlQKoovE0uoHMQLHCAnyZTizhXPnlDZJCDqdP8W9F57DTe-1MZPadcMF0GvCJ7gae1tbz6pRox5WjJXu3a_ad0ZNMVEKytfZAQF_hwY_yCd5nJv9MXNsbNVKmP7ew4EqIm-CUjGAlioFdcmg7DLNQB2ptPWmUy1U6vbh7EqHoc40l3fbDx9FqxytBArD5b06gp_L5KMYZIkCZMjqcS-QqiaWX-dDMdMBTSeCry-JsTZ4zkUJdDcxY2J4kRvNk7g);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.25rem
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden max-w-md mx-auto shadow-xl bg-white dark:bg-background-dark">
+<!-- Top Navigation -->
+<div class="flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-[#dbe0e6] dark:border-white/10">
+<div class="text-[#111418] dark:text-white flex size-12 shrink-0 items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Edit Profile</h2>
+</div>
+<div class="flex flex-col gap-2 pb-24">
+<!-- Profile Photo Section -->
+<div class="flex p-4 @container bg-white dark:bg-background-dark">
+<div class="flex w-full flex-col gap-4 items-center">
+<div class="flex gap-4 flex-col items-center">
+<div class="relative group">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32 border-4 border-primary/10" data-alt="Modern professional headshot of a student" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrctwtCRV22YPNRUIHaDFbwpgW56d65aOehPJ9tfeGywn-yJF-3P0ACb6fUd9FRCbo-lBaQumB8Xrun1vir4vkvxPy5jhgonw8HDCCcJAxySoe7x1qP5DtyiJjsoh_C7yz0gbQ54eNLynKH8KZbWDBuXfvu2AMxBCYn4ypxCAS5skkm1iB33_HAJHabAbGQbdG3PHk0INHxWomIxcpM0jV2VGTNrIRp_yyvynGXq-5QmTdtEB7nvKCayypHjYWb922j44ZBF65GuY");'>
+</div>
+<div class="absolute bottom-0 right-0 bg-primary p-2 rounded-full text-white shadow-lg border-2 border-white dark:border-background-dark">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-[#111418] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Alex Rivera</p>
+<p class="text-[#617589] dark:text-white/60 text-base font-normal leading-normal text-center">Change profile photo</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Personal Information Section -->
+<div class="px-4">
+<div class="bg-white dark:bg-white/5 rounded-xl border border-[#dbe0e6] dark:border-white/10 overflow-hidden">
+<h3 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pt-4">Personal Information</h3>
+<div class="flex flex-col gap-1 px-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-white text-base font-medium leading-normal pb-2">Full Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-white/20 bg-white dark:bg-transparent focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="Enter your full name" value="Alex Rivera"/>
+</label>
+</div>
+<div class="flex flex-col gap-1 px-4 py-3 pb-6">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-white text-base font-medium leading-normal pb-2">Region</p>
+<select class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-white/20 bg-white dark:bg-transparent focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal">
+<option selected="" value="north-america">North America</option>
+<option value="europe">Europe</option>
+<option value="asia">Asia</option>
+<option value="latin-america">Latin America</option>
+</select>
+</label>
+</div>
+</div>
+</div>
+<!-- Academic Information Section -->
+<div class="px-4 mt-4">
+<div class="bg-white dark:bg-white/5 rounded-xl border border-[#dbe0e6] dark:border-white/10 overflow-hidden">
+<h3 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pt-4">Academic Background</h3>
+<div class="flex flex-col gap-1 px-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-white text-base font-medium leading-normal pb-2">University</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-white/20 bg-white dark:bg-transparent focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="Your university name" value="Stanford University"/>
+</label>
+</div>
+<div class="flex flex-col gap-1 px-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-white text-base font-medium leading-normal pb-2">Major</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-white/20 bg-white dark:bg-transparent focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="Field of study" value="Computer Science"/>
+</label>
+</div>
+<div class="flex flex-col gap-1 px-4 py-3 pb-6">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-white text-base font-medium leading-normal pb-2">Year of Study</p>
+<select class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-white/20 bg-white dark:bg-transparent focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal">
+<option value="freshman">Freshman (Year 1)</option>
+<option value="sophomore">Sophomore (Year 2)</option>
+<option selected="" value="junior">Junior (Year 3)</option>
+<option value="senior">Senior (Year 4)</option>
+<option value="graduate">Graduate Student</option>
+</select>
+</label>
+</div>
+</div>
+</div>
+<!-- Discovery Preferences Section -->
+<div class="px-4 mt-4">
+<div class="bg-white dark:bg-white/5 rounded-xl border border-[#dbe0e6] dark:border-white/10 overflow-hidden">
+<h3 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pt-4">Opportunities</h3>
+<p class="text-[#617589] dark:text-white/60 text-sm px-4 pb-2">Select what you're looking for</p>
+<div class="flex flex-wrap gap-2 p-4 pt-2 pb-6">
+<button class="px-4 py-2 rounded-full bg-primary text-white text-sm font-medium">Scholarships</button>
+<button class="px-4 py-2 rounded-full bg-primary text-white text-sm font-medium">Internships</button>
+<button class="px-4 py-2 rounded-full bg-[#f0f2f4] dark:bg-white/10 text-[#111418] dark:text-white text-sm font-medium">Research</button>
+<button class="px-4 py-2 rounded-full bg-primary text-white text-sm font-medium">Events</button>
+<button class="px-4 py-2 rounded-full bg-[#f0f2f4] dark:bg-white/10 text-[#111418] dark:text-white text-sm font-medium">Hackathons</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Action Button -->
+<div class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-white dark:bg-background-dark p-4 border-t border-[#dbe0e6] dark:border-white/10">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl transition-colors shadow-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">save</span>
+                Save Profile
+            </button>
+</div>
+</div>
+</body></html>

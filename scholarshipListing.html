@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Scholarship Listing Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b8cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full max-w-[430px] mx-auto flex-col bg-background-light dark:bg-background-dark overflow-x-hidden shadow-2xl">
+<div class="sticky top-0 z-10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="text-[#111418] dark:text-white flex size-12 shrink-0 items-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Scholarships</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#111418] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+<div class="flex gap-3 px-4 py-3 overflow-x-auto no-scrollbar">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-4 shadow-sm">
+<p class="text-[#111418] dark:text-slate-200 text-sm font-medium">Eligibility</p>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-4 shadow-sm">
+<p class="text-[#111418] dark:text-slate-200 text-sm font-medium">Amount</p>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-4 shadow-sm">
+<p class="text-[#111418] dark:text-slate-200 text-sm font-medium">Deadline</p>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+</div>
+</div>
+<div class="flex-1 px-4 space-y-3 pt-2 pb-10">
+<div class="flex gap-4 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 justify-between items-center group active:scale-[0.98] transition-all">
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 aspect-square bg-cover rounded-xl size-[70px] flex items-center justify-center" data-alt="Blue abstract icon for technology scholarship">
+<span class="material-symbols-outlined text-primary text-3xl">biotech</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-tight mb-1">Global STEM Leaders Grant</p>
+<p class="text-primary text-sm font-bold leading-normal">$5,000 Award</p>
+<p class="text-[#617589] dark:text-slate-400 text-xs font-normal leading-normal">Future Tech Foundation</p>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<div class="bg-[#078838]/10 px-2 py-1 rounded text-[#078838] text-[10px] font-bold uppercase">Active</div>
+<p class="text-[#617589] dark:text-slate-400 text-[10px] font-medium">Deadline: Oct 15</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 justify-between items-center group active:scale-[0.98] transition-all">
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 aspect-square bg-cover rounded-xl size-[70px] flex items-center justify-center" data-alt="Soft green background for arts scholarship icon">
+<span class="material-symbols-outlined text-primary text-3xl">palette</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-tight mb-1">Arts &amp; Humanities Excellence</p>
+<p class="text-primary text-sm font-bold leading-normal">$2,500 Award</p>
+<p class="text-[#617589] dark:text-slate-400 text-xs font-normal leading-normal">National Arts Council</p>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<div class="bg-orange-100 px-2 py-1 rounded text-orange-600 text-[10px] font-bold uppercase">Expiring</div>
+<p class="text-orange-600 text-[10px] font-medium">5 days left</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 justify-between items-center group active:scale-[0.98] transition-all">
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 aspect-square bg-cover rounded-xl size-[70px] flex items-center justify-center" data-alt="University building icon in blue gradient">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-tight mb-1">Undergraduate Merit Award</p>
+<p class="text-primary text-sm font-bold leading-normal">Full Tuition</p>
+<p class="text-[#617589] dark:text-slate-400 text-xs font-normal leading-normal">Global University Fund</p>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<div class="bg-[#078838]/10 px-2 py-1 rounded text-[#078838] text-[10px] font-bold uppercase">Active</div>
+<p class="text-[#617589] dark:text-slate-400 text-[10px] font-medium">Deadline: Sep 30</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 justify-between items-center group active:scale-[0.98] transition-all opacity-80">
+<div class="flex items-start gap-4">
+<div class="bg-slate-100 dark:bg-slate-700 aspect-square bg-cover rounded-xl size-[70px] flex items-center justify-center" data-alt="Abstract community icon in gray scale">
+<span class="material-symbols-outlined text-slate-400 text-3xl">groups</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-tight mb-1">Community Service Fund</p>
+<p class="text-slate-500 text-sm font-bold leading-normal">$1,000 Award</p>
+<p class="text-[#617589] dark:text-slate-400 text-xs font-normal leading-normal">Unity Foundation</p>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<div class="bg-slate-100 px-2 py-1 rounded text-slate-500 text-[10px] font-bold uppercase">Closed</div>
+<p class="text-slate-400 text-[10px] font-medium">Aug 20, 2024</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 justify-between items-center group active:scale-[0.98] transition-all">
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 aspect-square bg-cover rounded-xl size-[70px] flex items-center justify-center" data-alt="Women in science icon blue scheme">
+<span class="material-symbols-outlined text-primary text-3xl">woman</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-tight mb-1">Women in Tech Grant</p>
+<p class="text-primary text-sm font-bold leading-normal">$4,000 Award</p>
+<p class="text-[#617589] dark:text-slate-400 text-xs font-normal leading-normal">Ada Lovelace Inst.</p>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<div class="bg-[#078838]/10 px-2 py-1 rounded text-[#078838] text-[10px] font-bold uppercase">Active</div>
+<p class="text-[#617589] dark:text-slate-400 text-[10px] font-medium">Deadline: Dec 01</p>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-8 py-3 flex justify-between items-center z-20">
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] font-semibold">Explore</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-[#617589] dark:text-slate-400">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="text-[10px] font-medium">Saved</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-[#617589] dark:text-slate-400">
+<span class="material-symbols-outlined">description</span>
+<span class="text-[10px] font-medium">Applications</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-[#617589] dark:text-slate-400">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</div>
+</div>
+</div>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>
